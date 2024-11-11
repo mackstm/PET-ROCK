@@ -1,0 +1,30 @@
+name: Deploy on Push
+
+# Ejecuta este workflow cada vez que se hace push a la rama main (puedes cambiar la rama)
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Paso 1: Checa el repositorio
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Paso 2: Instala Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # Puedes especificar otra versión si es necesario
+
+      # Paso 3: Instala dependencias
+      - name: Install dependencies
+        run: npm install
+
+      # Paso 4: Ejecuta el comando de despliegue
+      - name: Run deploy script
+        run: npm run deploy
