@@ -11,6 +11,18 @@
     color: #ffffff;
 }
 
+.pinkbutton {
+    border-color: #F387A5;
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.pinkbutton:hover {
+    background-color: #F387A5;
+    border-color: black;
+    color: black;
+}
+
 .black{
     background-color: #222222;
     color: #ffffff;
