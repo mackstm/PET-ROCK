@@ -22,6 +22,11 @@
     border-color: black;
     color: black;
 }
+.pinkcontact{
+    border:1px solid #F387A5;
+    background-color: #222222;
+    color: #ffffff;
+}
 
 .black{
     background-color: #222222;
