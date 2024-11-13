@@ -48,3 +48,13 @@
 main {
     padding-top: 30px;
 }
+.cardColor {
+    background-color: #a681b800;
+    color: #ffffff; 
+    border: 1px solid #F387A5; 
+}
+.modalColor{
+    background-color: #020202;
+    color: #ffffff; 
+    border: 1px solid #F387A5; 
+}

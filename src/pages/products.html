@@ -1,165 +1,581 @@
 <!doctype html>
 <html lang="es">
-    <head>
-        <title>Title</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-        
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <!-- Bootstrap Icons -->
-        <link rel="stylesheet" href="../styles/main.css">
-    </head>
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg  border-bottom border-dark purple fixed-top">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><img src="../assets/img/rock-logo.jpeg" alt="rocklogo" width="60"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item ms-5">
-                        <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item ms-5">
-                        <a class="nav-link text-light" href="pages/products.html">Products</a>
-                      </li>
-                      <li class="nav-item ms-5">
-                        <a class="nav-link text-light" href="pages/reviews.html">Reviews</a>
-                      </li>
-                      <li class="nav-item ms-5">
-                        <a class="nav-link text-light" href="pages/contact.html">Contact</a>
-                      </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn pinkbutton" type="submit">Search</button>
-                    </form>
-                  </div>
-                </div>
-              </nav>
-              
-              <nav class="breadcrumbColor border-bottom border-secondary" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                <ol class="breadcrumb my-0 ms-3">
-                  <li class="breadcrumb-item active" aria-current="page">Home</li>
-                </ol>
-              </nav>
-        </header>
-        
-        <main class="black">
-            <!-- Carousel -->
-            <div class="container">
-                <div id="carouselExampleIndicators" class="carousel slide">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="../assets/img/piedras-rocas.webp" class="object-fit-cover col-12" height="400px" alt="rock 1">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="../assets/img/ruby.jpg" class="object-fit-cover col-12" height="400px" alt="rock 2">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="../assets/img/diorita.jpg" alt="rock 3" class="object-fit-cover col-12" height="400px">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg  border-bottom border-dark purple fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../assets/img/rock-logo.jpeg" alt="rocklogo" width="60"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item ms-5">
+              <a class="nav-link active text-light" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link text-light" href="./products.html">Products</a>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link text-light" href="./reviews.html">Reviews</a>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link text-light" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn pinkbutton" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="breadcrumbColor border-bottom border-secondary" style="--bs-breadcrumb-divider: '>';"
+      aria-label="breadcrumb">
+      <ol class="breadcrumb my-0 ms-3">
+        <li class="breadcrumb-item active" aria-current="page">Home</li>
+      </ol>
+    </nav>
+  </header>
+
+  <main class="black">
+    <!-- Carousel -->
+    <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../assets/img/piedras-rocas.webp" class="object-fit-cover col-12" height="400px" alt="rock 1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Piedra Comun</h5>
+              <p>Una Piedra del Rio</p>
             </div>
-            
-            <br>
-            <!-- Cards -->
-            <div class="container">
-                <div class="row">
-                    <div class="card col-6 col-md-3" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    
-                    
-                </div>
-                
-            </div>
-            <br>
-        </main>
-        
-        <footer class="purpleFooter">
-          <div
-            class="container-fluid p-2">
-            <div class="row justify-content-center align-items-center">
-              <div class="col-12 col-lg-6">
-                <p class="text-center text-light">Copyright &copy; 2024 PET ROCK</p>
-              </div>
-              <div class="col-12 col-lg-6">
-                <ul class="list-inline text-center text-light">
-                  <div class="row justify-content-center align-items-center">
-                    <li class="list-inline-item"><a href="#" class="link-underline link-underline-opacity-0">
-                      <i class="bi bi-facebook text-white"></i>
-                      <span class="d-none d-lg-inline text-white ms-2">PETROCK</span>
-                    </a>
-                  </li>
-                  </div>
-                  
-                  <div class="row justify-content-center align-items-center">
-                    <li class="list-inline-item"><a href="#" class="link-underline link-underline-opacity-0">
-                      <i class="bi bi-twitter text-white"></i>
-                      <span class="d-none d-lg-inline text-white ms-2">@petrockofficial</span>
-                    </a></li>
-                  </div>
-
-                  <div class="row justify-content-center align-items-center">
-                    <li class="list-inline-item"><a href="https://www.instagram.com/therock/" class="link-underline link-underline-opacity-0">
-                      <i class="bi bi-instagram text-white"></i>
-                      <span class="d-none d-lg-inline text-white ms-2">@PetRockOficial</span>
-                    </a></li>
-                  </div>
-
-                  <div class="row justify-content-center align-items-center">
-                    <li class="list-inline-item"><a href="#" class="link-underline link-underline-opacity-0">
-                      <i class="bi bi-linkedin text-white"></i>
-                      <span class="d-none d-lg-inline text-white ms-2">PETROCK</span>
-                    </a></li>
-                  </div> 
-                </ul>
-              </div>
-            </div>
-            
           </div>
-          
-        </footer>
+          <div class="carousel-item">
+            <img src="../assets/img/ruby.jpg" class="object-fit-cover col-12" height="400px" alt="rock 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Rubí</h5>
+              <p>Una Piedra Brillante y Preciosa</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/img/diorita.jpg" alt="rock 3" class="object-fit-cover col-12" height="400px">
+            <div class="carousel-caption">
+              <h5>Diorita</h5>
+              <p class="d-none d-md-block">Una Piedra Blanca usada comunmente para decoraciones de interior</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+    <br>
+    <!-- Cards -->
+    <div class="container">
+      <!-- Pack Diseño Interior -->
+      <h1 class="text-decoration-underline text-center mb-4">Pack Diseño Interior</h1>
+      <div class="row">
+
+        <!-- Diorita -->
+        <div class="card col col-md-4 cardColor p-2" style="height: 28rem;">
+          <div class="position-relative">
+            <img src="../assets/img/diorita.jpg" class="card-img-top" alt="Diorita"
+              style="height: 27rem; object-fit: cover;">
+            <div class="card-body position-absolute bottom-0 start-0 w-100 bg-dark bg-opacity-50 text-white p-3">
+              <h5 class="card-title">Diorita</h5>
+              <button class="btn btn-primary pinkbutton" data-bs-toggle="modal" data-bs-target="#diorita">Ver
+                Información</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Diorita Modal -->
+        <div class="modal fade" id="diorita" tabindex="-1" aria-labelledby="diorita" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modalColor">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5">Diorita</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h3>Una Piedra Blanca usada comúnmente para decoraciones de interior.</h3>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn pinkbutton">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Granito -->
+        <div class="card col col-md-4 cardColor p-2" style="height: 28rem;">
+          <div class="position-relative">
+            <img src="../assets/img/granito.jpg" class="card-img-top" alt="Granito"
+              style="height: 27rem; object-fit: cover;">
+            <div class="card-body position-absolute bottom-0 start-0 w-100 bg-dark bg-opacity-50 text-white p-3">
+              <h5 class="card-title">Granito</h5>
+              <button class="btn btn-primary pinkbutton" data-bs-toggle="modal" data-bs-target="#granito">Ver
+                Información</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Granito Modal -->
+        <div class="modal fade" id="granito" tabindex="-1" aria-labelledby="granito" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modalColor">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5">Granito</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h3>Una roca ígnea usada en interiores por su resistencia y estética.</h3>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn pinkbutton">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mármol -->
+        <div class="card col col-md-4 cardColor p-2" style=" height: 28rem;">
+          <div class="position-relative">
+            <img src="../assets/img/marmol.jpg" class="card-img-top" alt="Mármol"
+              style="height: 27rem; object-fit: cover;">
+            <div class="card-body position-absolute bottom-0 start-0 w-100 bg-dark bg-opacity-50 text-white p-3">
+              <h5 class="card-title">Mármol</h5>
+              <button class="btn btn-primary pinkbutton" data-bs-toggle="modal" data-bs-target="#marmol">Ver
+                Información</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mármol Modal -->
+        <div class="modal fade" id="marmol" tabindex="-1" aria-labelledby="marmol" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modalColor">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5">Mármol</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h3>Material elegante ideal para pisos y encimeras.</h3>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn pinkbutton">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <!-- Cuarzo -->
+        <div class="card col col-md-4 cardColor p-2" style=" height: 28rem;">
+          <div class="position-relative">
+            <img src="../assets/img/cuarzo.jpg" class="card-img-top" alt="Cuarzo"
+              style="height: 27rem; object-fit: cover;">
+            <div class="card-body position-absolute bottom-0 start-0 w-100 bg-dark bg-opacity-50 text-white p-3">
+              <h5 class="card-title">Cuarzo</h5>
+              <button class="btn btn-primary pinkbutton" data-bs-toggle="modal" data-bs-target="#cuarzo">Ver
+                Información</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cuarzo Modal -->
+        <div class="modal fade" id="cuarzo" tabindex="-1" aria-labelledby="cuarzo" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modalColor">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5">Cuarzo</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h3>Una roca cristalina ideal para elementos decorativos.</h3>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn pinkbutton">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pizarra -->
+        <div class="card col col-md-4 cardColor p-2" style=" height: 28rem;">
+          <div class="position-relative">
+            <img src="../assets/img/pizarra.jpg" class="card-img-top" alt="Pizarra"
+              style="height: 27rem; object-fit: cover;">
+            <div class="card-body position-absolute bottom-0 start-0 w-100 bg-dark bg-opacity-50 text-white p-3">
+              <h5 class="card-title">Pizarra</h5>
+              <button class="btn btn-primary pinkbutton" data-bs-toggle="modal" data-bs-target="#pizarra">Ver
+                Información</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pizarra Modal -->
+        <div class="modal fade" id="pizarra" tabindex="-1" aria-labelledby="pizarra" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modalColor">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5">Pizarra</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h3>Una roca metamórfica excelente para acabados modernos.</h3>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn pinkbutton">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Travertino -->
+        <div class="card col col-md-4 cardColor p-2" style="height: 28rem;">
+          <div class="position-relative">
+            <img src="../assets/img/travertino.jpg" class="card-img-top" alt="Travertino"
+              style="height: 27rem; object-fit: cover;">
+            <div class="card-body position-absolute bottom-0 start-0 w-100 bg-dark bg-opacity-50 text-white p-3">
+              <h5 class="card-title">Travertino</h5>
+              <button class="btn btn-primary pinkbutton" data-bs-toggle="modal" data-bs-target="#travertino">Ver
+                Información</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Travertino Modal -->
+        <div class="modal fade" id="travertino" tabindex="-1" aria-labelledby="travertino" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modalColor">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5">Travertino</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h3>Ideal para decoraciones de interiores con un estilo rústico y elegante.</h3>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn pinkbutton">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Pack Piedra Preciosa -->
+        <h1 class="text-decoration-underline text-center mb-4 mt-4">Pack Piedra Preciosa</h1>
+        <div class="row">
+
+          <!-- Amatista -->
+          <div class="card col col-md-4 cardColor p-2" style="height: 28rem;">
+            <div class="position-relative">
+              <img src="../assets/img/amatista.jpg" class="card-img-top" alt="Amatista"
+                style="height: 27rem; object-fit: cover;">
+              <div class="card-body position-absolute bottom-0 start-0 w-100 bg-dark bg-opacity-50 text-white p-3">
+                <h5 class="card-title">Amatista</h5>
+                <button class="btn btn-primary pinkbutton" data-bs-toggle="modal" data-bs-target="#amatista">Ver
+                  Información</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Amatista Modal -->
+          <div class="modal fade" id="amatista" tabindex="-1" aria-labelledby="amatista" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content modalColor">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5">Amatista</h1>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h3>Una piedra preciosa de color morado, conocida por sus propiedades relajantes.</h3>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn pinkbutton">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rubí -->
+          <div class="card col col-md-4 cardColor p-2" style="height: 28rem;">
+            <div class="position-relative">
+              <img src="../assets/img/rubi.jpg" class="card-img-top" alt="Rubí"
+                style="height: 27rem; object-fit: cover;">
+              <div class="card-body position-absolute bottom-0 start-0 w-100 bg-dark bg-opacity-50 text-white p-3">
+                <h5 class="card-title">Rubí</h5>
+                <button class="btn btn-primary pinkbutton" data-bs-toggle="modal" data-bs-target="#rubi">Ver
+                  Información</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rubí Modal -->
+          <div class="modal fade" id="rubi" tabindex="-1" aria-labelledby="rubi" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content modalColor">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5">Rubí</h1>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h3>Una piedra preciosa de color rojo, conocida por su rareza y belleza.</h3>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn pinkbutton">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Esmeralda -->
+          <div class="card col col-md-4 cardColor p-2" style="height: 28rem;">
+            <div class="position-relative">
+              <img src="../assets/img/esmeralda.jpg" class="card-img-top" alt="Esmeralda"
+                style="height: 27rem; object-fit: cover;">
+              <div class="card-body position-absolute bottom-0 start-0 w-100 bg-dark bg-opacity-50 text-white p-3">
+                <h5 class="card-title">Esmeralda</h5>
+                <button class="btn btn-primary pinkbutton" data-bs-toggle="modal" data-bs-target="#esmeralda">Ver
+                  Información</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Esmeralda Modal -->
+          <div class="modal fade" id="esmeralda" tabindex="-1" aria-labelledby="esmeralda" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content modalColor">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5">Esmeralda</h1>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h3>Piedra preciosa verde que se destaca por su gran belleza y elegancia.</h3>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn pinkbutton">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Pack Piedras Comunes -->
+        <h1 class="text-decoration-underline text-center mb-4 mt-4">Pack Piedras Comunes</h1>
+        <div class="row">
+
+          <!-- Piedra Común -->
+          <div class="card col col-md-4 cardColor p-2" style="height: 28rem;">
+            <div class="position-relative">
+              <img src="../assets/img/piedra_comun.jpg" class="card-img-top" alt="Piedra Común"
+                style="height: 27rem; object-fit: cover;">
+              <div class="card-body position-absolute bottom-0 start-0 w-100 bg-dark bg-opacity-50 text-white p-3">
+                <h5 class="card-title">Piedra Común</h5>
+                <button class="btn btn-primary pinkbutton" data-bs-toggle="modal" data-bs-target="#piedra_comun">Ver
+                  Información</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Piedra Común Modal -->
+          <div class="modal fade" id="piedra_comun" tabindex="-1" aria-labelledby="piedra_comun" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content modalColor">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5">Piedra Común</h1>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h3>Piedra accesible, fácil de encontrar, con una amplia gama de usos.</h3>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn pinkbutton">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cuarzo -->
+          <div class="card col col-md-4 cardColor p-2" style="height: 28rem;">
+            <div class="position-relative">
+              <img src="../assets/img/cuarzo.jpg" class="card-img-top" alt="Cuarzo"
+                style="height: 27rem; object-fit: cover;">
+              <div class="card-body position-absolute bottom-0 start-0 w-100 bg-dark bg-opacity-50 text-white p-3">
+                <h5 class="card-title">Cuarzo</h5>
+                <button class="btn btn-primary pinkbutton" data-bs-toggle="modal" data-bs-target="#cuarzo">Ver
+                  Información</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cuarzo Modal -->
+          <div class="modal fade" id="cuarzo" tabindex="-1" aria-labelledby="cuarzo" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content modalColor">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5">Cuarzo</h1>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h3>Piedra común utilizada para diversas aplicaciones, conocida por su claridad.</h3>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn pinkbutton">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Jaspe -->
+          <div class="card col col-md-4 cardColor p-2" style="height: 28rem;">
+            <div class="position-relative">
+              <img src="../assets/img/jaspe.jpg" class="card-img-top" alt="Jaspe"
+                style="height: 27rem; object-fit: cover;">
+              <div class="card-body position-absolute bottom-0 start-0 w-100 bg-dark bg-opacity-50 text-white p-3">
+                <h5 class="card-title">Jaspe</h5>
+                <button class="btn btn-primary pinkbutton" data-bs-toggle="modal" data-bs-target="#jaspe">Ver
+                  Información</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Jaspe Modal -->
+          <div class="modal fade" id="jaspe" tabindex="-1" aria-labelledby="jaspe" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content modalColor">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5">Jaspe</h1>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h3>Una piedra común con diferentes colores, utilizada en joyería y decoraciones.</h3>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn pinkbutton">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+    <br>
+  </main>
+
+  <footer class="purpleFooter">
+    <div class="container-fluid p-2">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-lg-6">
+          <p class="text-center text-light">Copyright &copy; 2024 PET ROCK</p>
+        </div>
+        <div class="col-12 col-lg-6">
+          <ul class="list-inline text-center text-light">
+            <div class="row justify-content-center align-items-center">
+              <li class="list-inline-item"><a href="#" class="link-underline link-underline-opacity-0">
+                  <i class="bi bi-facebook text-white"></i>
+                  <span class="d-none d-lg-inline text-white ms-2">PETROCK</span>
+                </a>
+              </li>
+            </div>
+
+            <div class="row justify-content-center align-items-center">
+              <li class="list-inline-item"><a href="#" class="link-underline link-underline-opacity-0">
+                  <i class="bi bi-twitter text-white"></i>
+                  <span class="d-none d-lg-inline text-white ms-2">@petrockofficial</span>
+                </a></li>
+            </div>
+
+            <div class="row justify-content-center align-items-center">
+              <li class="list-inline-item"><a href="https://www.instagram.com/therock/"
+                  class="link-underline link-underline-opacity-0">
+                  <i class="bi bi-instagram text-white"></i>
+                  <span class="d-none d-lg-inline text-white ms-2">@PetRockOficial</span>
+                </a></li>
+            </div>
+
+            <div class="row justify-content-center align-items-center">
+              <li class="list-inline-item"><a href="#" class="link-underline link-underline-opacity-0">
+                  <i class="bi bi-linkedin text-white"></i>
+                  <span class="d-none d-lg-inline text-white ms-2">PETROCK</span>
+                </a></li>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
